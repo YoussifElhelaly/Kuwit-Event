@@ -1,0 +1,151 @@
+.content {
+    margin-top: 170px;
+}
+
+.content .head{
+    margin-bottom: 50px;
+}
+
+form {
+    background-color: #003550;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 60%;
+    align-content: flex-start;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  form button.btn {
+    background-color: #3BB2C3;
+    color: white;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .content .form-floating {
+    position: relative;
+  }
+  
+  .all {
+    width: 100%;
+  }
+  
+  marquee {
+    color: white;
+  }
+  
+  .all select {
+    width: 100%;
+  }
+  
+  .half {
+    width: 45%;
+    flex-grow: 1;
+  }
+  
+  .half input {
+    width: 100%;
+  }
+  
+  .content .form-floating > input,
+  .content .form-floating > select {
+    padding: 1.625rem 0.75rem 0.625rem;
+    height: calc(3.5rem + 2px);
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .content .form-floating > select ~ label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  }
+  
+  .content .form-floating > input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  
+  .content .form-floating > input::placeholder {
+    color: transparent;
+  }
+  
+  .content .form-floating > input:not(:placeholder-shown) ~ label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  }
+  
+  .content .form-floating > input:focus + label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  }
+  
+  .content .form-floating > label {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    border: 1px solid #1e7f5200;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    font-size: 14px;
+  }
+  .content .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .content .float-whatsapp{
+    font-size: 20px;
+    color: white;
+   margin: auto;
+  }
+  
+  .content .float-whatsapp a{
+    color: white;
+    font-weight: 400;
+}
+
+  @media (max-width: 1000px) {
+    .content .container {
+      flex-direction: column-reverse;
+    }
+
+    form {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .content .container {
+      flex-direction: column-reverse;
+    }
+    form {
+      width: 100%;
+    }
+        .content {
+            margin-top: 50px;
+        }
+  }
+
+  @media (max-width : 400px) {
+    .half {
+            width: 100%;
+        }
+  }
+  /* End Content */
